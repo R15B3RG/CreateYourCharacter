@@ -8,9 +8,9 @@ namespace CreateYourCharacter.EnumAttacks
 {
     public enum Physical
     {
-        Sword = 5,
-        Axe = 5,
-        Bow = 3,
+        Sword,
+        Axe,
+        Bow,
         
 
     }
