@@ -16,5 +16,10 @@ namespace CreateYourCharacter.Character.Race
             PhysicalResistance[Physical.Bow] = Resistance.SmallResistance;
 
         }
+
+        public override string ToString()
+        {
+            return "Dwarf";
+        }
     }
 }

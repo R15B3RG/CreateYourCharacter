@@ -16,9 +16,12 @@ namespace CreateYourCharacter.Character.CharacterClass
             PhysicalResistance[Physical.Sword] = Resistance.BigResistance;
             PhysicalResistance[Physical.Axe] = Resistance.BigResistance;
             PhysicalResistance[Physical.Bow] = Resistance.SmallResistance;
-        } 
+        }
 
-        
+        public override string ToString()
+        {
+            return "Knight";
+        }
 
     }
 }

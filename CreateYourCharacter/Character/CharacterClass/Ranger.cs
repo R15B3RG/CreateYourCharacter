@@ -16,5 +16,9 @@ namespace CreateYourCharacter.Character.CharacterClass
             MagicalResistance[Magical.Earth] = Resistance.SmallResistance;
             MagicalResistance[Magical.Wind] = Resistance.SmallResistance;
         }
+        public override string ToString()
+        {
+            return "Ranger";
+        }
     }
 }

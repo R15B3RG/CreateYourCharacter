@@ -22,10 +22,8 @@ namespace CreateYourCharacter.Character.CharacterClass
         {
             HealthPoints = healthPoints;
             MagicPoints = magicPoints;
-        }
 
-        public CharacterClass()
-        {
+
             MagicalResistance = new Dictionary<Magical, Resistance>();
 
             PhysicalResistance = new Dictionary<Physical, Resistance>();

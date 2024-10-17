@@ -8,10 +8,10 @@ namespace CreateYourCharacter.EnumAttacks
 {
     public enum Magical
     {
-        Fire = 7,
-        Ice = 7,
-        Lightning = 10,
-        Earth = 6,
-        Wind = 5
+        Fire,
+        Ice,
+        Lightning,
+        Earth,
+        Wind
     }
 }

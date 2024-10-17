@@ -17,3 +17,4 @@ C:\Users\fuelf\source\repos\CreateYourCharacter\CreateYourCharacter\bin\Debug\ne
 C:\Users\fuelf\source\repos\CreateYourCharacter\CreateYourCharacter\bin\Debug\net8.0\System.Memory.Data.dll
 C:\Users\fuelf\source\repos\CreateYourCharacter\CreateYourCharacter\obj\Debug\net8.0\CreateYourCharacter.csproj.AssemblyReference.cache
 C:\Users\fuelf\source\repos\CreateYourCharacter\CreateYourCharacter\obj\Debug\net8.0\CreateYo.02A28160.Up2Date
+C:\Users\fuelf\source\repos\CreateYourCharacter\CreateYourCharacter\obj\Debug\net8.0\CreateYourCharacter.sourcelink.json

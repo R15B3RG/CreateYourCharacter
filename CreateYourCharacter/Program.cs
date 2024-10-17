@@ -4,6 +4,7 @@ using CreateYourCharacter.Character.CharacterClass;
 using CreateYourCharacter.Character.Race;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Channels;
+using OpenAI;
 
 
 public class CharacterCreator
@@ -45,7 +46,7 @@ public class CharacterCreator
                 break;
                 
             }
-            if (genderInput == "2")
+            else if (genderInput == "2")
             {
                 character.Gender = "Female";
                 gender = false;
@@ -83,14 +84,14 @@ public class CharacterCreator
 
             }
 
-            if (classInput == "2")
+            else if (classInput == "2")
             {
                 character.characterClass = new Mage();
                 classChoice = false;
                 break;
             }
 
-            if (classInput == "3")
+            else if (classInput == "3")
             {
                 character.characterClass = new Ranger();
                 classChoice = false;
@@ -127,14 +128,14 @@ public class CharacterCreator
                 break;
             }
 
-            if(raceInput == "2")
+            else if(raceInput == "2")
             {
                 character.race = new Elf();
                 race = false;
                 break;
             }
 
-            if (raceInput == "3")
+            else if (raceInput == "3")
             { 
                 character.race = new Dwarf();
                 race = false;
@@ -168,6 +169,7 @@ public class CharacterCreator
             }
             else
             {
+                character.CharacterName = nameInput;
                 break;
             }
         }
@@ -175,10 +177,29 @@ public class CharacterCreator
         Console.Clear();
 
         Console.WriteLine($"Is this your character?"
-            + $"\n {character.CharacterName}"
-            + $"\n {character.Gender}"
-            + $"\n {character.characterClass}"
-            + $"\n {character.race}");
+            + "\n"
+            + $"\n Name: {character.CharacterName}"
+            + $"\n Gender: {character.Gender}"
+            + $"\n Class: {character.characterClass}"
+            + $"\n Race: {character.race}"
+            + "\n"
+            + "\n"
+            + "\n 1. Yes"
+            + "\n 2. No");
+
+        string choiceInput = Console.ReadLine();
+
+        if (choiceInput == "1")
+        { 
+            
+        }
+        else if (choiceInput == "2")
+            {
+            Console.Clear();
+            CharacterCreator characterCreator = new CharacterCreator();
+            character = new Character();
+            characterCreator.Creator(character);
+        }
         
     }
 }

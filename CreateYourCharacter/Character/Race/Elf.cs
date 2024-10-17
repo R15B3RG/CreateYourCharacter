@@ -16,5 +16,10 @@ namespace CreateYourCharacter.Character.Race
             
 
         }
+
+        public override string ToString()
+        {
+            return "Elf";
+        }
     }
 }

@@ -8,8 +8,8 @@ namespace CreateYourCharacter.EnumAttacks
 {
     public enum Resistance
     {
-        None = 0,
-        SmallResistance = 5,
-        BigResistance = 10
+        None,
+        SmallResistance,
+        BigResistance
     }
 }

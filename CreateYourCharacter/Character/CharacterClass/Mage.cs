@@ -16,8 +16,11 @@ namespace CreateYourCharacter.Character.CharacterClass
             MagicalResistance[Magical.Ice] = Resistance.SmallResistance;
             MagicalResistance[Magical.Fire] = Resistance.SmallResistance;
             
-        }                        
+        }
 
-
+        public override string ToString()
+        {
+            return "Mage";
+        }
     }
 }
